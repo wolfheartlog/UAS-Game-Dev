@@ -23,6 +23,7 @@ public class Template_UIManager : MonoBehaviour
     public GameObject dialogueContainer;
     public GameObject NPC_Container;
     public GameObject playerContainer;
+    public PlayerMovement playerMovement;
 
     public Text NPC_Text;
     public Text NPC_label;
@@ -61,6 +62,7 @@ public class Template_UIManager : MonoBehaviour
 
         VD.LoadDialogues(); //Load all dialogues to memory so that we dont spend time doing so later
         //An alternative to this can be preloading dialogues from the VIDE_Assign component!
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
     //Call this to begin the dialogue and advance through it
@@ -301,6 +303,7 @@ public class Template_UIManager : MonoBehaviour
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
         VD.EndDialogue();
+        playerMovement.enabled = true;
     }
 
     //To prevent errors
