@@ -11,7 +11,7 @@ public class InteractColliderUI : MonoBehaviour
 
     private bool isColliding = false;
 
-    private void OnTriggerStay2D(Collider2D other)
+    public virtual void OnTriggerStay2D(Collider2D other)
     {
         if ((interactLayerMask.value & 1 << other.gameObject.layer) != 0)
         {
@@ -24,10 +24,10 @@ public class InteractColliderUI : MonoBehaviour
 
             isColliding = true;
         }
-        Debug.Log("Stay");
+        // Debug.Log("Stay");
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    public void OnTriggerExit2D(Collider2D other)
     {
         if (isColliding && (interactLayerMask.value & 1 << other.gameObject.layer) != 0)
         {
@@ -41,7 +41,7 @@ public class InteractColliderUI : MonoBehaviour
         }
     }
 
-    private void MoveUI(Transform obj)
+    public void MoveUI(Transform obj)
     {
         if (cam == null)
         {
@@ -63,7 +63,7 @@ public class InteractColliderUI : MonoBehaviour
         Debug.Log(obj.position);
     }
 
-    private void Update()
+    public virtual void Update()
     {
         if (interactUI.activeSelf)
         {
