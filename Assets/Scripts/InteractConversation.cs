@@ -11,10 +11,14 @@ public class InteractConversation : InteractColliderUI
 
     // public QuestChartDemo questUI;
     public PlayerMovement playerMovement;
+    public Rigidbody2D playerRB;
+    public Animator playerAnimator;
     public VIDE_Assign inTrigger;
 
     void Awake() {
         playerMovement = GetComponent<PlayerMovement>();    
+        playerRB = GetComponent<Rigidbody2D>();    
+        playerAnimator = GetComponent<Animator>();    
     }
 
     public override void OnTriggerStay2D(Collider2D other)
@@ -34,13 +38,14 @@ public class InteractConversation : InteractColliderUI
     public override void Update()
     {
         base.Update();
-        //Only allow player to move and turn if there are no dialogs loaded
+
         if (VD.isActive)
         {
+            playerRB.velocity = 0 * Vector2.zero;
+            playerAnimator.enabled = false;
             playerMovement.enabled = false;
         }
 
-        //Interact with NPCs when pressing E
         if (Input.GetKeyDown(KeyCode.E))
         {
             TryInteract();
@@ -49,7 +54,6 @@ public class InteractConversation : InteractColliderUI
     }
     void TryInteract()
     {
-        /* Prioritize triggers */
 
         if (inTrigger)
         {
@@ -57,13 +61,10 @@ public class InteractConversation : InteractColliderUI
             return;
         }
 
-        /* If we are not in a trigger, try with raycasts */
-
         RaycastHit rHit;
 
         if (Physics.Raycast(transform.position, transform.forward, out rHit, 2))
         {
-            //Lets grab the NPC's VIDE_Assign script, if there's any
             VIDE_Assign assigned;
             if (rHit.collider.GetComponent<VIDE_Assign>() != null)
                 assigned = rHit.collider.GetComponent<VIDE_Assign>();
@@ -71,10 +72,10 @@ public class InteractConversation : InteractColliderUI
 
             if (assigned.alias == "QuestUI")
             {
-                // questUI.Interact(); //Begins interaction with Quest Chart
+                // questUI.Interact();
             } else
             {
-                diagUI.Interact(assigned); //Begins interaction
+                diagUI.Interact(assigned);
             }
         }
     }

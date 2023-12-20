@@ -705,6 +705,7 @@ MonoBehaviour:
   NPC_Container: {fileID: 1879320468}
   playerContainer: {fileID: 602111818}
   playerMovement: {fileID: 2051480931}
+  playerAnimator: {fileID: 2051480929}
   NPC_Text: {fileID: 1762732803}
   NPC_label: {fileID: 970534532}
   NPCSprite: {fileID: 566789736}
@@ -7840,7 +7841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.038426}
+  m_LocalPosition: {x: -6.95, y: 19.63, z: -10.038426}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11208,7 +11209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703074132}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.038426}
+  m_LocalPosition: {x: -6.95, y: 19.63, z: -10.038426}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28392,7 +28393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051480927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.03842684}
+  m_LocalPosition: {x: -6.95, y: 19.63, z: -0.03842684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28551,6 +28552,8 @@ MonoBehaviour:
   playerName: Yuliana
   diagUI: {fileID: 266534252}
   playerMovement: {fileID: 2051480931}
+  playerRB: {fileID: 0}
+  playerAnimator: {fileID: 0}
   inTrigger: {fileID: 0}
 --- !u!1 &2053270952
 GameObject:
