@@ -3,7 +3,7 @@ using UnityEngine;
 public class InteractColliderUI : MonoBehaviour
 {
     private Camera cam;
-    private Vector3 offset = new Vector3(0, 1.5f, 0);
+    private Vector3 offset = new Vector3(0, 0.5f, 0);
     [SerializeField] private GameObject interactUI;
 
     [SerializeField] private LayerMask interactLayerMask;
@@ -27,7 +27,7 @@ public class InteractColliderUI : MonoBehaviour
         // Debug.Log("Stay");
     }
 
-    public void OnTriggerExit2D(Collider2D other)
+    public virtual void OnTriggerExit2D(Collider2D other)
     {
         if (isColliding && (interactLayerMask.value & 1 << other.gameObject.layer) != 0)
         {

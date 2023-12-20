@@ -25,8 +25,9 @@ public class InteractConversation : InteractColliderUI
             Debug.Log(inTrigger);
     }
 
-    void OnTriggerExit2D()
+    public override void OnTriggerExit2D(Collider2D other)
     {
+        base.OnTriggerExit2D(other);
         inTrigger = null;
     }
 
