@@ -15,6 +15,8 @@ public class InteractConversation : InteractColliderUI
     public Animator playerAnimator;
     public VIDE_Assign inTrigger;
 
+    private bool isActivated = false;
+
     void Awake() {
         playerMovement = GetComponent<PlayerMovement>();    
         playerRB = GetComponent<Rigidbody2D>();    
@@ -26,7 +28,6 @@ public class InteractConversation : InteractColliderUI
         base.OnTriggerStay2D(other);
         if (other.GetComponent<VIDE_Assign>() != null)
             inTrigger = other.GetComponent<VIDE_Assign>();
-            Debug.Log(inTrigger);
     }
 
     public override void OnTriggerExit2D(Collider2D other)
@@ -44,9 +45,11 @@ public class InteractConversation : InteractColliderUI
             playerRB.velocity = 0 * Vector2.zero;
             playerAnimator.enabled = false;
             playerMovement.enabled = false;
+        }else{
+            isActivated = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !isActivated)
         {
             TryInteract();
         }
@@ -54,7 +57,7 @@ public class InteractConversation : InteractColliderUI
     }
     void TryInteract()
     {
-
+        isActivated = true;
         if (inTrigger)
         {
             diagUI.Interact(inTrigger);
@@ -79,4 +82,5 @@ public class InteractConversation : InteractColliderUI
             }
         }
     }
+
 }

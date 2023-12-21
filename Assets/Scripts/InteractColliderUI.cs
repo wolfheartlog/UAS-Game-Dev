@@ -37,7 +37,7 @@ public class InteractColliderUI : MonoBehaviour
             }
 
             isColliding = false;
-            Debug.Log("Exit");
+            // Debug.Log("Exit");
         }
     }
 
@@ -60,7 +60,7 @@ public class InteractColliderUI : MonoBehaviour
             interactUI.transform.position = pos;
         }
         
-        Debug.Log(obj.position);
+        // Debug.Log(obj.position);
     }
 
     public virtual void Update()

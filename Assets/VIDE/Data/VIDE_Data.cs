@@ -1626,7 +1626,11 @@ namespace VIDE_Data
         public static void LoadDialogues()
         {
             FetchDiags();
-            foreach (Diags d in diags)
+
+            // Create a copy of the diags list to avoid modification during iteration
+            List<Diags> diagsCopy = new List<Diags>(diags);
+
+            foreach (Diags d in diagsCopy)
             {
                 currentDiag = diags.IndexOf(d);
                 Load(d.name);
@@ -1637,6 +1641,7 @@ namespace VIDE_Data
 
             currentDiag = -1;
         }
+
 
         /// <summary>
         /// Unloads all of the dialogues from memory.

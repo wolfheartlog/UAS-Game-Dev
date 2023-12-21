@@ -142,12 +142,12 @@ public class Template_UIManager : MonoBehaviour
             //For player nodes, NodeData.commentIndex is the index of the picked choice
             if (!data.pausedAction && !animatingText && data.isPlayer && !useNavigation)
             {
-                if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
+                if (Input.GetKeyDown(KeyCode.DownArrow))
                 {
                     if (data.commentIndex < availableChoices - 1)
                         data.commentIndex++;
                 }
-                if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+                if (Input.GetKeyDown(KeyCode.UpArrow))
                 {
                     if (data.commentIndex > 0)
                         data.commentIndex--;
@@ -164,6 +164,7 @@ public class Template_UIManager : MonoBehaviour
             if (Input.GetKeyDown(interactionKey))
             {
                 Interact(VD.assigned);
+                // Debug.Log(VD.assigned);
             }
             if (Input.GetMouseButtonDown(0))
             {
@@ -265,8 +266,8 @@ public class Template_UIManager : MonoBehaviour
         }
     }
 
-    //This uses the returned string[] from nodeData.comments to create the UIs for each comment
-    //It first cleans, then it instantiates new choices
+    // This uses the returned string[] from nodeData.comments to create the UIs for each comment
+    // It first cleans, then it instantiates new choices
     public void SetChoices(string[] choices)
     {
         availableChoices = 0;
@@ -276,22 +277,25 @@ public class Template_UIManager : MonoBehaviour
 
         if (player_animateText)
         {
-            //This coroutine animates the Player choices instead of displaying it all at once
+            // This coroutine animates the Player choices instead of displaying it all at once
             TextAnimator = AnimatePlayerText(choices);
             StartCoroutine(TextAnimator);
-        } else
+        }
+        else
         {
             for (int i = 0; i < choices.Length; i++)
             {
-                maxPlayerChoices[i].transform.GetChild(0).GetComponent<Text>().text = choices[i]; //Assumes first child of button gameobject is text gameobject
+                maxPlayerChoices[i].transform.GetChild(0).GetComponent<Text>().text = choices[i]; // Assumes first child of button gameobject is text gameobject
                 maxPlayerChoices[i].gameObject.SetActive(true);
                 availableChoices++;
             }
-            //Highlight the button. Used by Navi
+
+            // Highlight the button. Used by Navi
             if (useNavigation)
                 maxPlayerChoices[0].Select();
         }
     }
+
 
     //Unsuscribe from everything, disable UI, and end dialogue
     //Called automatically because we subscribed to the OnEnd event
