@@ -182,6 +182,7 @@ MonoBehaviour:
   - CrazyCap
   - DEMO_Condition
   - demo_Narration
+  - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
   - Item_LookUp
@@ -191,7 +192,7 @@ MonoBehaviour:
   - QuestChartDemo
   - TriggeredDude
   - Witch
-  assignedIndex: 11
+  assignedIndex: 12
   assignedID: 82073
   assignedDialogue: QuestChartDemo
   interactionCount: 0
