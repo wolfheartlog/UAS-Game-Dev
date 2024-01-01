@@ -7,11 +7,13 @@ public class LevelManager : MonoBehaviour
     private Animator _playerAnimator;
     private GameObject Player;
 
+    [SerializeField] PlayerData playerData;
+
     public void StartGame(){
         SceneManager.LoadSceneAsync("House");
     }
     
-    public async void LoadScene(string sceneName) {
+    public async void LoadScene(string sceneName, Vector2 spawnLocation) {
         var scene = SceneManager.LoadSceneAsync(sceneName);
         scene.allowSceneActivation = false;
 
@@ -24,6 +26,8 @@ public class LevelManager : MonoBehaviour
         _playerAnimator.enabled = false;
     
         await Task.Delay(500);
+        playerData.spawnLocation = spawnLocation;
+        Debug.Log(playerData.spawnLocation);
         scene.allowSceneActivation = true;
     }
 }
