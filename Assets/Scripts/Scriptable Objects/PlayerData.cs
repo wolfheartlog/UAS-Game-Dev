@@ -6,4 +6,6 @@ using UnityEngine;
 public class PlayerData : ScriptableObject
 {
     public Vector2 spawnLocation = new Vector2(0,0);
+    public int expToLevelUp = 100;
+    public int currentLevel = 1;
 }

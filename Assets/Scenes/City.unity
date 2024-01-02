@@ -44821,6 +44821,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2958194137836084654, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 2958194137836084654, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.63
+      objectReference: {fileID: 0}
     - target: {fileID: 2958194138447284358, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
       propertyPath: m_Name
       value: Setup
@@ -44877,5 +44885,34 @@ PrefabInstance:
       propertyPath: interactUI
       value: 
       objectReference: {fileID: 35574668}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: diagUI
+      value: 
+      objectReference: {fileID: 266534252}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: playerRB
+      value: 
+      objectReference: {fileID: 2958194138008872239}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: interactUI
+      value: 
+      objectReference: {fileID: 35574668}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 2051480929}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2051480931}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: interactLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+--- !u!50 &2958194138008872239 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2958194138449606730, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+  m_PrefabInstance: {fileID: 2958194138008872238}
+  m_PrefabAsset: {fileID: 0}

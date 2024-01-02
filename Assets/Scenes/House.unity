@@ -3800,7 +3800,32 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 22.37
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: diagUI
+      value: 
+      objectReference: {fileID: 1294757660}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: playerRB
+      value: 
+      objectReference: {fileID: 1317745167}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: interactUI
+      value: 
+      objectReference: {fileID: 720385533}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 461095513}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 461095515}
+    - target: {fileID: 5204776330910062549, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: interactLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2958194138449606728, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
 --- !u!95 &461095513 stripped
 Animator:
@@ -7537,6 +7562,11 @@ Transform:
   m_Father: {fileID: 698635493}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1317745167 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 2958194138449606730, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+  m_PrefabInstance: {fileID: 461095512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1426993048
 GameObject:
   m_ObjectHideFlags: 0

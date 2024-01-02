@@ -6,14 +6,13 @@ using VIDE_Data;
 
 public class InteractConversation : InteractColliderUI
 {
-    public string playerName = "Yuliana";
     public Template_UIManager diagUI;
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private Rigidbody2D playerRB;
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private VIDE_Assign inTrigger;
 
-    // public QuestChartDemo questUI;
-    public PlayerMovement playerMovement;
-    public Rigidbody2D playerRB;
-    public Animator playerAnimator;
-    public VIDE_Assign inTrigger;
+    private LayerMask layerMask;
 
     private bool isActivated = false;
 
@@ -28,6 +27,7 @@ public class InteractConversation : InteractColliderUI
         base.OnTriggerStay2D(other);
         if (other.GetComponent<VIDE_Assign>() != null)
             inTrigger = other.GetComponent<VIDE_Assign>();
+            layerMask = other.gameObject.layer;
     }
 
     public override void OnTriggerExit2D(Collider2D other)
@@ -49,7 +49,7 @@ public class InteractConversation : InteractColliderUI
             isActivated = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && !isActivated)
+        if (Input.GetKeyDown(KeyCode.E) && !isActivated && (interactLayerMask.value & 1 << layerMask) != 0)
         {
             TryInteract();
         }

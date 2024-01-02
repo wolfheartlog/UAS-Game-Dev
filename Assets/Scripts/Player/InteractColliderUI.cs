@@ -6,7 +6,7 @@ public class InteractColliderUI : MonoBehaviour
     private Vector3 offset = new Vector3(0, 0.5f, 0);
     [SerializeField] private GameObject interactUI;
 
-    [SerializeField] private LayerMask interactLayerMask;
+    [SerializeField] protected LayerMask interactLayerMask;
     private Transform target;
 
     private bool isColliding = false;
