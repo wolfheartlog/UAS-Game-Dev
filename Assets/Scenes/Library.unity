@@ -547,6 +547,10 @@ PrefabInstance:
       propertyPath: interactUI
       value: 
       objectReference: {fileID: 762918276}
+    - target: {fileID: 2958194138449606735, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3dfbb8205b68ccd418ea4ba7abc4585e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1302b97a85999d4ebdaa68ad75c19ab, type: 3}
 --- !u!95 &639292997 stripped
