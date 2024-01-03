@@ -59,12 +59,6 @@ public class QuestPoint : MonoBehaviour
         }
     }
 
-    public void FinishQuestStep(){
-        if(currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint){
-            FinishQuestStep();
-        }
-    }
-
     public void FinishQuestInteract(){
         if(currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint){
             GameEventsManager.instance.questEvents.FinishQuest(questId);

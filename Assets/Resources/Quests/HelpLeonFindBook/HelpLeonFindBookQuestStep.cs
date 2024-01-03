@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(CircleCollider2D))]
 public class HelpLeonFindBookQuestStep : QuestStep
 {
-    private bool questActive = false;
+    private bool questActive = true;
     private void OnEnable()
     {
         GameEventsManager.instance.questEvents.onQuestStateChange += QuestStateChange;
@@ -41,5 +41,6 @@ public class HelpLeonFindBookQuestStep : QuestStep
             questActive = false;
             bookArea.SetActive(false);
         }
+        Debug.Log(quest.state);
     }
 }
