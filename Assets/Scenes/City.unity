@@ -369,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestIcon
       objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433563, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5695687190567209519, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
       propertyPath: m_Size.x
       value: 1
@@ -24920,7 +24924,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167720772}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &942899897
 MonoBehaviour:
@@ -25183,9 +25187,9 @@ Transform:
   m_Children:
   - {fileID: 266534253}
   - {fileID: 691431799}
-  - {fileID: 1652036015}
   - {fileID: 942899896}
   - {fileID: 2068240800}
+  - {fileID: 1652036015}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27523,13 +27527,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652036014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167720772}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1652036016
 MonoBehaviour:
@@ -27543,6 +27547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1c9bca81ecd834d8d31c049438edbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadQuestState: 0
 --- !u!1001 &1665781336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45358,7 +45363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1167720772}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2068240801
 MonoBehaviour:

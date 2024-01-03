@@ -39,11 +39,23 @@ public class CleanLeavesQuestStep : QuestStep
         if (leavesCollected < leavesToCollect)
         {
             leavesCollected++;
+            UpdateState();
         }
 
         if(leavesCollected >= leavesToCollect)
         {
             FinishQuestStep();
         }
+    }
+
+    private void UpdateState(){
+        string state = leavesCollected.ToString();
+        ChangeState(state);
+    }
+
+    protected override void SetQuestStepState(string state)
+    {
+        this.leavesCollected = System.Int32.Parse(state);
+        UpdateState();
     }
 }
