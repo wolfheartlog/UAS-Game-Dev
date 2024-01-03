@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
@@ -34,11 +35,12 @@ public class QuestPoint : MonoBehaviour
             questIcon.SetState(currentQuestState, startPoint, finishPoint);
         }
 
-        if(currentQuestState == QuestState.CAN_FINISH){
+        if (currentQuestState == QuestState.CAN_START || currentQuestState == QuestState.CAN_FINISH)
+        {
             this.gameObject.layer = LayerMask.NameToLayer("InteractLayer");
         }
-
-        if(currentQuestState == QuestState.FINISHED){
+        else if (currentQuestState == QuestState.REQUIREMENT_NOT_MET || currentQuestState == QuestState.FINISHED || currentQuestState ==  QuestState.IN_PROGRESS)
+        {
             this.gameObject.layer = LayerMask.NameToLayer("Default");
         }
     }
