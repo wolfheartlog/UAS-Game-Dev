@@ -42,6 +42,7 @@ public class QuestPoint : MonoBehaviour
         else if (currentQuestState == QuestState.REQUIREMENT_NOT_MET || currentQuestState == QuestState.FINISHED || currentQuestState ==  QuestState.IN_PROGRESS)
         {
             this.gameObject.layer = LayerMask.NameToLayer("Default");
+            interactUI.SetActive(false);
         }
     }
 
@@ -55,6 +56,12 @@ public class QuestPoint : MonoBehaviour
     public void AdvanceQuestInteract(){
         if(currentQuestState.Equals(QuestState.IN_PROGRESS)){
             GameEventsManager.instance.questEvents.AdvanceQuest(questId);
+        }
+    }
+
+    public void FinishQuestStep(){
+        if(currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint){
+            FinishQuestStep();
         }
     }
 
