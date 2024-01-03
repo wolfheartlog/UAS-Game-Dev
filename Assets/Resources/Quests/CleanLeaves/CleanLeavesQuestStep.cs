@@ -32,6 +32,17 @@ public class CleanLeavesQuestStep : QuestStep
                 obj.layer = LayerMask.NameToLayer("InteractLayer");
             }
         }
+
+        if(quest.state == QuestState.FINISHED)
+        {
+            GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Leaves");
+
+            foreach (GameObject obj in objectsWithTag)
+            {
+                obj.layer = LayerMask.NameToLayer("Default");
+                obj.SetActive(false);
+            }
+        }
     }
 
     private void LeavesCollected()

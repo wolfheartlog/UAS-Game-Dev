@@ -37,6 +37,10 @@ public class QuestPoint : MonoBehaviour
         if(currentQuestState == QuestState.CAN_FINISH){
             this.gameObject.layer = LayerMask.NameToLayer("InteractLayer");
         }
+
+        if(currentQuestState == QuestState.FINISHED){
+            this.gameObject.layer = LayerMask.NameToLayer("Default");
+        }
     }
 
     public void StartQuestInteract(){
