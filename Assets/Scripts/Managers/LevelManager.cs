@@ -12,8 +12,16 @@ public class LevelManager : MonoBehaviour
     public void StartGame(){
         SceneManager.LoadSceneAsync("House");
     }
+
+    private void OnEnable() {
+        GameEventsManager.instance.levelEvents.onLevelLoad += LoadScene;
+    }
+
+    private void OnDisable() {
+        GameEventsManager.instance.levelEvents.onLevelLoad -= LoadScene;
+    }
     
-    public async void LoadScene(string sceneName, Vector2 spawnLocation) {
+    private async void LoadScene(string sceneName, Vector2 spawnLocation) {
         var scene = SceneManager.LoadSceneAsync(sceneName);
         scene.allowSceneActivation = false;
 

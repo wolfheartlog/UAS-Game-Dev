@@ -22,7 +22,7 @@ public class InteractScene : MonoBehaviour
 
     private void Update(){
         if (isTrigger && Input.GetKeyDown(KeyCode.E)) {
-            levelManager.LoadScene(sceneName, spawnLocation);
+            GameEventsManager.instance.levelEvents.LevelLoad(sceneName, spawnLocation);
         }
     }
 }

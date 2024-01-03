@@ -17,6 +17,7 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.questEvents.onStartQuest += StartQuest;
         GameEventsManager.instance.questEvents.onAdvanceQuest += AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest += FinishQuest;
+        GameEventsManager.instance.levelEvents.onLevelLoad += SaveQuestOnLevelLoad;
 
         GameEventsManager.instance.questEvents.onQuestStepStateChange += QuestStepStateChange;
 
@@ -27,6 +28,7 @@ public class QuestManager : MonoBehaviour
         GameEventsManager.instance.questEvents.onStartQuest -= StartQuest;
         GameEventsManager.instance.questEvents.onAdvanceQuest -= AdvanceQuest;
         GameEventsManager.instance.questEvents.onFinishQuest -= FinishQuest;
+        GameEventsManager.instance.levelEvents.onLevelLoad -= SaveQuestOnLevelLoad;
 
         GameEventsManager.instance.questEvents.onQuestStepStateChange -= QuestStepStateChange;
 
@@ -174,5 +176,11 @@ public class QuestManager : MonoBehaviour
             Debug.LogError("Gagal memuat quest "+questInfo.id+" karena "+e.Message);
         }
         return quest;
+    }
+
+    private void SaveQuestOnLevelLoad(string sceneName, Vector2 pos){
+        foreach(Quest quest in questMap.Values){
+            SaveQuest(quest);
+        }
     }
 }
