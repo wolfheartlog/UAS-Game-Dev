@@ -50,6 +50,11 @@ public class QuestPoint : MonoBehaviour
             interactUI.SetActive(false);
         }
     }
+    public void AdvanceQuestInteract(){
+        if(currentQuestState.Equals(QuestState.IN_PROGRESS)){
+            GameEventsManager.instance.questEvents.AdvanceQuest(questId);
+        }
+    }
 
     public void FinishQuestInteract(){
         if(currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint){
