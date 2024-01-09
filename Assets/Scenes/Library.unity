@@ -1894,6 +1894,7 @@ GameObject:
   - component: {fileID: 1771695018}
   - component: {fileID: 1771695020}
   - component: {fileID: 1771695019}
+  - component: {fileID: 1771695021}
   m_Layer: 6
   m_Name: Bu Nina
   m_TagString: Untagged
@@ -11101,6 +11102,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1771695021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970013659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8b99d8a12e39e4b94d2d7162c7c978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diags:
+  - BapakDialogue
+  - BuNinaDialogue
+  - Charlie
+  - CommentModifier
+  - CrazyCap
+  - DEMO_Condition
+  - demo_Narration
+  - DianaDialogue
+  - Example3Dialogue
+  - Example4_dialogue
+  - IbuDialogue
+  - Item_LookUp
+  - JonasDialogue
+  - Laura
+  - LeonDialogue
+  - MayaDialogue
+  - MrCube
+  - NenekAyuDialogue
+  - NPCOnly
+  - QuestChartDemo
+  - TriggeredDude
+  - Witch
+  assignedIndex: 1
+  assignedID: 7994
+  assignedDialogue: BuNinaDialogue
+  interactionCount: 0
+  alias: Bu Nina
+  overrideStartNode: -1
+  defaultNPCSprite: {fileID: 21300000, guid: 7f7192b9dc0fe0d43b03bd2a5b7106ee, type: 3}
+  defaultPlayerSprite: {fileID: 21300000, guid: 432f0feaa8fc83b4d9af7320c8d43af5, type: 3}
+  targetManager: {fileID: 0}
+  preload: 0
+  notuptodate: 0
+  startp: 0
+  loadtag: 
+  langs: []
+  S_playerDiags: []
+  S_actionNodes: []
 --- !u!1 &1773276867
 GameObject:
   m_ObjectHideFlags: 0
@@ -18588,6 +18640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diags:
   - BapakDialogue
+  - BuNinaDialogue
   - Charlie
   - CommentModifier
   - CrazyCap
@@ -18601,12 +18654,14 @@ MonoBehaviour:
   - JonasDialogue
   - Laura
   - LeonDialogue
+  - MayaDialogue
   - MrCube
+  - NenekAyuDialogue
   - NPCOnly
   - QuestChartDemo
   - TriggeredDude
   - Witch
-  assignedIndex: 13
+  assignedIndex: 14
   assignedID: 60424
   assignedDialogue: LeonDialogue
   interactionCount: 0
