@@ -9066,6 +9066,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 5d4feb7c18816ac4f86e36b8966658a6, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 1036734492}
 --- !u!114 &1668112050
 MonoBehaviour:
@@ -9081,6 +9082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diags:
   - BapakDialogue
+  - BuNinaDialogue
   - Charlie
   - CommentModifier
   - CrazyCap
@@ -9089,17 +9091,22 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
   - Laura
   - LeonDialogue
+  - MayaDialogue
   - MrCube
+  - NenekAyuDialogue
   - NPCOnly
   - QuestChartDemo
+  - RenataDialogue
   - TriggeredDude
   - Witch
-  assignedIndex: 9
+  assignedIndex: 12
   assignedID: 56625
   assignedDialogue: IbuDialogue
   interactionCount: 0
@@ -9217,6 +9224,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 40cd3634d0cf2fe42af7a75a8d615ff4, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 1036734492}
 --- !u!114 &1701948530
 MonoBehaviour:
@@ -9241,6 +9249,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue

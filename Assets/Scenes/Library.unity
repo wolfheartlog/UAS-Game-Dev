@@ -1939,7 +1939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: City
   spawnLocation: {x: 14.53, y: 15.50788}
-  levelManager: {fileID: 0}
+  levelManager: {fileID: 1832281416}
 --- !u!1 &970013659
 GameObject:
   m_ObjectHideFlags: 0
@@ -11183,6 +11183,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
@@ -11227,6 +11229,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 6026e303ff7e7334a8dda1ba06d8bac2, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 407680536}
 --- !u!1 &1773276867
 GameObject:
@@ -11650,6 +11653,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: d2669c6223c57854aacbf0cf44a5cd80, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 407680536}
 --- !u!114 &1855784820
 MonoBehaviour:
@@ -11674,6 +11678,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
@@ -11687,7 +11693,7 @@ MonoBehaviour:
   - RenataDialogue
   - TriggeredDude
   - Witch
-  assignedIndex: 20
+  assignedIndex: 22
   assignedID: 95723
   assignedDialogue: RenataDialogue
   interactionCount: 0
@@ -18794,6 +18800,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
@@ -18807,7 +18815,7 @@ MonoBehaviour:
   - RenataDialogue
   - TriggeredDude
   - Witch
-  assignedIndex: 14
+  assignedIndex: 16
   assignedID: 60424
   assignedDialogue: LeonDialogue
   interactionCount: 0
@@ -18916,6 +18924,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: b5dedd392e1e8e34f980b8ae5375295f, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 407680536}
 --- !u!1 &1974892847
 GameObject:

@@ -44,22 +44,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268dc70b105993846a123be43345df63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileIndex: 14
+  fileIndex: 19
   skinIndex: 1
   loadTag: 
   startID: 0
   curFocusID: 0
-  currentID: 97963
+  currentID: 21976
   autosave: 1
   previewPanning: 0
-  currentDiag: 14
+  currentDiag: 19
   locEdit: 0
   pNodeID: 18
   aNodeID: 2
   S_playerDiags:
   - commentCount: 1
     s_comment:
-    - text: Maya, kamu kenapa kelihatannya sedih?
+    - text: Apakah Nenek mau menyebrang jalan?
       extraData: ExtraData
       inputSetIndex: 0
       outputNodeIndex: 1
@@ -70,18 +70,18 @@ MonoBehaviour:
         x: 301
         y: 63
         width: 30
-        height: 32
+        height: 33
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
     ID: 0
     rect:
       serializedVersion: 2
-      x: 1210
-      y: 210
+      x: 60
+      y: 270
       width: 348
-      height: 138
-    pTag: 
+      height: 139
+    pTag: Yuliana
     expand: 0
     sprite: {fileID: 0}
     vars: []
@@ -89,7 +89,7 @@ MonoBehaviour:
     isPlayer: 1
   - commentCount: 1
     s_comment:
-    - text: Tadi aku beli es krim di penjual lewat, tapi sayangnya es krimku jatuh...
+    - text: Iya, apakah boleh minta bantuannya ya?
       extraData: ExtraData
       inputSetIndex: 1
       outputNodeIndex: 2
@@ -100,17 +100,17 @@ MonoBehaviour:
         x: 301
         y: 63
         width: 30
-        height: 46
+        height: 33
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
     ID: 1
     rect:
       serializedVersion: 2
-      x: 1590
-      y: 210
+      x: 520
+      y: 270
       width: 348
-      height: 152.5
+      height: 139
     pTag: 
     expand: 0
     sprite: {fileID: 0}
@@ -119,11 +119,11 @@ MonoBehaviour:
     isPlayer: 0
   - commentCount: 1
     s_comment:
-    - text: Sayang sekali ya...
+    - text: '[Bantu]'
       extraData: ExtraData
       inputSetIndex: 2
-      outputNodeIndex: 3
-      outActionIndex: -1
+      outputNodeIndex: -1
+      outActionIndex: 2
       showmore: 0
       outRect:
         serializedVersion: 2
@@ -137,19 +137,20 @@ MonoBehaviour:
     ID: 2
     rect:
       serializedVersion: 2
-      x: 1980
-      y: 240
+      x: 910
+      y: 230
       width: 348
       height: 129
-    pTag: 
+    pTag: Yuliana
     expand: 0
     sprite: {fileID: 0}
     vars: []
     varKeys: []
     isPlayer: 1
-  - commentCount: 2
+  - commentCount: 1
     s_comment:
-    - text: '[Berikan permen]'
+    - text: Terima kasih atas bantuannya ya, Nak. Mungkin tidak banyak, tapi ini
+        permen untuk kamu.
       extraData: ExtraData
       inputSetIndex: 3
       outputNodeIndex: 4
@@ -160,67 +161,178 @@ MonoBehaviour:
         x: 301
         y: 63
         width: 30
-        height: 23
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    - text: '[Jangan berikan permen]'
-      extraData: ExtraData
-      inputSetIndex: 3
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
+        height: 48
       sprites: {fileID: 0}
       audios: {fileID: 0}
       visible: 1
     ID: 3
     rect:
       serializedVersion: 2
-      x: 2370
-      y: 240
+      x: 1810
+      y: 90
       width: 348
-      height: 153
-    pTag: 
-    expand: 0
-    sprite: {fileID: 0}
-    vars: []
-    varKeys: []
-    isPlayer: 1
-  - commentCount: 1
-    s_comment:
-    - text: Comment...
-      extraData: ExtraData
-      inputSetIndex: 4
-      outputNodeIndex: -1
-      outActionIndex: -1
-      showmore: 0
-      outRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      sprites: {fileID: 0}
-      audios: {fileID: 0}
-      visible: 1
-    ID: 4
-    rect:
-      serializedVersion: 2
-      x: 2700
-      y: 200
-      width: 348
-      height: 129
+      height: 154
     pTag: 
     expand: 0
     sprite: {fileID: 0}
     vars: []
     varKeys: []
     isPlayer: 0
-  S_actionNodes: []
+  - commentCount: 1
+    s_comment:
+    - text: Wah, terima kasih banyak, Nek!
+      extraData: ExtraData
+      inputSetIndex: 4
+      outputNodeIndex: -1
+      outActionIndex: 1
+      showmore: 0
+      outRect:
+        serializedVersion: 2
+        x: 301
+        y: 63
+        width: 30
+        height: 23
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 5
+    rect:
+      serializedVersion: 2
+      x: 2300
+      y: 100
+      width: 348
+      height: 129
+    pTag: Yuliana
+    expand: 0
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  S_actionNodes:
+  - pauseHere: 0
+    gameObjectName: Nek Ayu
+    methodName: StartQuestInteract
+    nameIndex: 12
+    methodIndex: 7
+    paramIndex: 0
+    opts:
+    - '[No method]'
+    - GetAssigned
+    - AssignNew
+    - SaveState
+    - LoadState
+    - OnBeforeSerialize
+    - OnAfterDeserialize
+    - StartQuestInteract
+    - AdvanceQuestInteract
+    - FinishQuestInteract
+    nameOpts:
+    - '[No object]'
+    - VCam
+    - Leaves (4)
+    - Maya
+    - Jonas
+    - Level Manager
+    - cm
+    - Leaves (2)
+    - Player
+    - Leaves (3)
+    - Main Camera
+    - Leaves (1)
+    - Nek Ayu
+    - Conversation Manager
+    - Leaves
+    - Diana
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 1510
+      y: 80
+      width: 200
+      height: 166
+    ID: 7
+    outPlayerIndex: -1
+    outActionIndex: -1
+    more: 1
+    ovrStartNode: 3
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: Nek Ayu
+    methodName: FinishQuestInteract
+    nameIndex: 12
+    methodIndex: 9
+    paramIndex: 0
+    opts:
+    - '[No method]'
+    - GetAssigned
+    - AssignNew
+    - SaveState
+    - LoadState
+    - OnBeforeSerialize
+    - OnAfterDeserialize
+    - StartQuestInteract
+    - AdvanceQuestInteract
+    - FinishQuestInteract
+    nameOpts:
+    - '[No object]'
+    - VCam
+    - Leaves (4)
+    - Maya
+    - Jonas
+    - Level Manager
+    - cm
+    - Leaves (2)
+    - Player
+    - Leaves (3)
+    - Main Camera
+    - Leaves (1)
+    - Nek Ayu
+    - Conversation Manager
+    - Leaves
+    - Diana
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 2700
+      y: 120
+      width: 200
+      height: 170
+    ID: 10
+    outPlayerIndex: -1
+    outActionIndex: -1
+    more: 0
+    ovrStartNode: -1
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: '[No object]'
+    methodName: '[No method]'
+    nameIndex: 0
+    methodIndex: 0
+    paramIndex: -1
+    opts:
+    - '[No method]'
+    nameOpts:
+    - '[No object]'
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    rect:
+      serializedVersion: 2
+      x: 1260
+      y: 220
+      width: 200
+      height: 170
+    ID: 4
+    outPlayerIndex: -1
+    outActionIndex: -1
+    more: 0
+    ovrStartNode: -1
+    renameDialogue: 
   S_selNodes: []

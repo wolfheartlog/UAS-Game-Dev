@@ -9,6 +9,13 @@ public class ResetPlayerSOPosition : MonoBehaviour
 
     void OnEnable() {
         playerData.spawnLocation = Vector2. zero;
+        playerData.currentGoodness = 0;
+        playerData.nekAyu = false;
+        playerData.diana = false;
+        playerData.jonas = false;
+        playerData.maya = false;
+        playerData.leon = false;
+        playerData.buNina = false;
         Destroy(this.gameObject);
     }   
 }

@@ -33,14 +33,14 @@ public class PlayerLevelManager : MonoBehaviour
     }
 
     private void ExperienceGained(int experience){
-        currentExperience += experience;
-        // check if we're ready to level up
-        while (currentExperience >= playerData.expToLevelUp) 
-        {
-            currentExperience -= playerData.expToLevelUp;
-            currentLevel++;
-            GameEventsManager.instance.playerEvents.PlayerLevelChange(currentLevel);
-        }
-        GameEventsManager.instance.playerEvents.PlayerExperienceChange(currentExperience);
+        // currentExperience += experience;
+        // // check if we're ready to level up
+        // while (currentExperience >= playerData.expToLevelUp) 
+        // {
+        //     currentExperience -= playerData.expToLevelUp;
+        //     currentLevel++;
+        //     GameEventsManager.instance.playerEvents.PlayerLevelChange(currentLevel);
+        // }
+        // GameEventsManager.instance.playerEvents.PlayerExperienceChange(currentExperience);
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: BorrowBookFromRenataQuest
   displayName: Borrow a book from the librarian
-  levelRequirements: 1
+  levelRequirements: 0
   questPrerequisites: []
   questStepPrefabs:
   - {fileID: 8171082825969331041, guid: 6b8a96a5036e02541b808c2e3c88a09f, type: 3}

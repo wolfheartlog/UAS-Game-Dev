@@ -11,6 +11,7 @@ public class QuestPoint : MonoBehaviour
     protected QuestState currentQuestState;
     [SerializeField] private bool startPoint = true;
     [SerializeField] private bool finishPoint = true;
+    [SerializeField] private PlayerData playerData;
 
     // icon
     [SerializeField] private GameObject interactUI;
@@ -43,6 +44,33 @@ public class QuestPoint : MonoBehaviour
         {
             this.gameObject.layer = LayerMask.NameToLayer("Default");
             interactUI.SetActive(false);
+        }
+    }
+
+    public void AddGoodness(){
+        playerData.currentGoodness += 1;
+    }
+
+    public void UpdateNPCInteraction(string npc){
+        switch(npc){
+        case "nek ayu":
+            playerData.nekAyu = true;
+            break;
+        case "diana":
+            playerData.diana = true;
+            break;
+        case "jonas":
+            playerData.jonas = true;
+            break;
+        case "maya":
+            playerData.maya = true;
+            break;
+        case "leon":
+            playerData.leon = true;
+            break;
+        case "bu nina":
+            playerData.buNina = true;
+            break;
         }
     }
 

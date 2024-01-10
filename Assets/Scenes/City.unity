@@ -23306,7 +23306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Library
   spawnLocation: {x: -0.94, y: -3.32}
-  levelManager: {fileID: 0}
+  levelManager: {fileID: 1024112502}
 --- !u!1 &589265885
 GameObject:
   m_ObjectHideFlags: 0
@@ -24678,6 +24678,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
@@ -24691,7 +24693,7 @@ MonoBehaviour:
   - RenataDialogue
   - TriggeredDude
   - Witch
-  assignedIndex: 15
+  assignedIndex: 17
   assignedID: 91149
   assignedDialogue: MayaDialogue
   interactionCount: 0
@@ -24722,6 +24724,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 34df5b86cfe8f884693138bfa18a4c64, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 23143491}
 --- !u!1 &857196829
 GameObject:
@@ -27366,8 +27369,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1364875644}
-  - component: {fileID: 1364875647}
   - component: {fileID: 1364875646}
+  - component: {fileID: 1364875647}
+  - component: {fileID: 1364875648}
   m_Layer: 6
   m_Name: Home-in
   m_TagString: Untagged
@@ -27425,12 +27429,65 @@ MonoBehaviour:
   m_GameObject: {fileID: 1364875643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbd5ccc521020aa45944fa98ae9b4ac6, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ce471963ad22254a8f70cc478d810d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: House
-  spawnLocation: {x: 4.03, y: -4.43}
-  levelManager: {fileID: 0}
+  sceneName: House Finish
+  spawnLocation: {x: 4, y: -3.3}
+  levelManager: {fileID: 1024112502}
+--- !u!114 &1364875648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364875643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8b99d8a12e39e4b94d2d7162c7c978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diags:
+  - BapakDialogue
+  - BuNinaDialogue
+  - Charlie
+  - CommentModifier
+  - CrazyCap
+  - DEMO_Condition
+  - demo_Narration
+  - DianaDialogue
+  - Example3Dialogue
+  - Example4_dialogue
+  - FinishDoor
+  - IbuDialogue
+  - Item_LookUp
+  - JonasDialogue
+  - Laura
+  - LeonDialogue
+  - MayaDialogue
+  - MrCube
+  - NenekAyuDialogue
+  - NPCOnly
+  - QuestChartDemo
+  - RenataDialogue
+  - TriggeredDude
+  - Witch
+  assignedIndex: 10
+  assignedID: 55993
+  assignedDialogue: FinishDoor
+  interactionCount: 0
+  alias: 
+  overrideStartNode: -1
+  defaultNPCSprite: {fileID: 21300000, guid: ad768716c8e26eb4c810421919d691d6, type: 3}
+  defaultPlayerSprite: {fileID: 21300000, guid: 432f0feaa8fc83b4d9af7320c8d43af5, type: 3}
+  targetManager: {fileID: 0}
+  preload: 0
+  notuptodate: 0
+  startp: 0
+  loadtag: 
+  langs: []
+  S_playerDiags: []
+  S_actionNodes: []
 --- !u!1001 &1404024665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28453,6 +28510,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
@@ -28466,7 +28525,7 @@ MonoBehaviour:
   - RenataDialogue
   - TriggeredDude
   - Witch
-  assignedIndex: 17
+  assignedIndex: 19
   assignedID: 21976
   assignedDialogue: NenekAyuDialogue
   interactionCount: 0
@@ -28497,6 +28556,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 3de31749ff2178e429be5543d458b762, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 23143491}
 --- !u!1 &1719246417
 GameObject:
@@ -45977,6 +46037,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
@@ -46252,6 +46314,7 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 67e5744c67f43dc4093828b71e605b53, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 23143491}
 --- !u!1001 &2106780258
 PrefabInstance:
@@ -46390,6 +46453,8 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
+  - FinishDoor
   - IbuDialogue
   - Item_LookUp
   - JonasDialogue
@@ -46403,7 +46468,7 @@ MonoBehaviour:
   - RenataDialogue
   - TriggeredDude
   - Witch
-  assignedIndex: 12
+  assignedIndex: 14
   assignedID: 55244
   assignedDialogue: JonasDialogue
   interactionCount: 0
@@ -46434,4 +46499,5 @@ MonoBehaviour:
   questInfoForPoint: {fileID: 11400000, guid: 1c06fe2eb0ddc5040a4304e7d9bfb933, type: 2}
   startPoint: 1
   finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
   interactUI: {fileID: 23143491}
