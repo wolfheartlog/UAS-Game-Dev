@@ -46,7 +46,7 @@ public class HelpNekAyuCrossTheRoadQuestStep : QuestStep
         {
             for (float i = 0; i <= 1; i += _time)
             {
-                blackScreenImage.color = new Color(255, 255, 255, i);
+                blackScreenImage.color = new Color(0, 0, 0, i);
                 yield return null;
             }
 
@@ -55,14 +55,14 @@ public class HelpNekAyuCrossTheRoadQuestStep : QuestStep
             nekAyu.transform.position = new Vector3(-18.67f , 15.11f);
             player.transform.position = new Vector3(nekAyu.transform.position.x + 1, nekAyu.transform.position.y);
 
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(0.5f);
             FinishQuestStep();
         }
         else
         {
             for (float i = 1; i >= 0; i -= Time.deltaTime * 2)
             {
-                blackScreenImage.color = new Color(255, 255, 255, i);
+                blackScreenImage.color = new Color(0, 0, 0, i);
             }
         }
     }
