@@ -16,6 +16,7 @@ public class ResetPlayerSOPosition : MonoBehaviour
         playerData.maya = false;
         playerData.leon = false;
         playerData.buNina = false;
+        PlayerPrefs.DeleteAll();
         Destroy(this.gameObject);
     }   
 }
