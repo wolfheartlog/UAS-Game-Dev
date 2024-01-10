@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Leaves
   - BookArea
+  - BlackScreen
   layers:
   - Default
   - TransparentFX

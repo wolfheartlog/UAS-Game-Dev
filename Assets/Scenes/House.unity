@@ -9232,6 +9232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diags:
   - BapakDialogue
+  - BuNinaDialogue
   - Charlie
   - CommentModifier
   - CrazyCap
@@ -9245,9 +9246,12 @@ MonoBehaviour:
   - JonasDialogue
   - Laura
   - LeonDialogue
+  - MayaDialogue
   - MrCube
+  - NenekAyuDialogue
   - NPCOnly
   - QuestChartDemo
+  - RenataDialogue
   - TriggeredDude
   - Witch
   assignedIndex: 0
