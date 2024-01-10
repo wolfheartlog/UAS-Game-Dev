@@ -307,7 +307,9 @@ public class Template_UIManager : MonoBehaviour
         if (dialogueContainer != null)
             dialogueContainer.SetActive(false);
         VD.EndDialogue();
-        playerAnimator.enabled = true;
+        if(playerAnimator){
+            playerAnimator.enabled = true;
+        }
         playerMovement.enabled = true;
     }
 

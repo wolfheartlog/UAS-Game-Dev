@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +21,7 @@ public class FinishGame : MonoBehaviour
     {
         float _time = Time.deltaTime * 0.5f;
         GameObject blackScreen = GameObject.FindGameObjectWithTag("BlackScreen");
-        UnityEngine.UI.Image blackScreenImage = blackScreen.GetComponent<UnityEngine.UI.Image>();
+        Image blackScreenImage = blackScreen.GetComponent<Image>();
         
             for (float i = 0; i <= 1; i += _time)
             {
