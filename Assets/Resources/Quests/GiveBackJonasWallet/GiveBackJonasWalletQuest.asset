@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GiveBackJonasWalletQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: GiveBackJonasWalletQuest
-  displayName: Give Back Jonas's Wallet
+  displayName: Kembalikan dompet pak jonas
   levelRequirements: 0
   questPrerequisites:
   - {fileID: 11400000, guid: 67e5744c67f43dc4093828b71e605b53, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HelpLeonFindBookQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: HelpLeonFindBookQuest
-  displayName: Help Leon Find Book
+  displayName: Bantu pak leon mencari buku
   levelRequirements: 1
   questPrerequisites: []
   questStepPrefabs:

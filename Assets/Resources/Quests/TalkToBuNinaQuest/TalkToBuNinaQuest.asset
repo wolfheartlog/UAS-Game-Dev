@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TalkToBuNinaQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: TalkToBuNinaQuest
-  displayName: Talk to bu Nina
+  displayName: Sapa bu nina
   levelRequirements: 1
   questPrerequisites: []
   questStepPrefabs:

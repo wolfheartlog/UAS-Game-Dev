@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GiveMayaCandyQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: GiveMayaCandyQuest
-  displayName: Give maya candy
+  displayName: Berikan maya permen
   levelRequirements: 1
   questPrerequisites:
   - {fileID: 11400000, guid: 3de31749ff2178e429be5543d458b762, type: 2}
