@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BorrowBookFromRenataQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: BorrowBookFromRenataQuest
-  displayName: Borrow a book from the librarian
+  displayName: Meminjam buku
   levelRequirements: 0
   questPrerequisites: []
   questStepPrefabs:

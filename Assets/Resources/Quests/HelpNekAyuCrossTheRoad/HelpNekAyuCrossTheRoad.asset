@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HelpNekAyuCrossTheRoad
   m_EditorClassIdentifier: 
   <id>k__BackingField: HelpNekAyuCrossTheRoad
-  displayName: 
+  displayName: Bantu nek ayu menyebrang jalan
   levelRequirements: 1
   questPrerequisites: []
   questStepPrefabs:

@@ -1,25 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
+using TMPro;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 public class QuestPoint : MonoBehaviour
 {
+    [Header("Quest Info")]
     [SerializeField] QuestInfoSO questInfoForPoint;
     private string questId;
     protected QuestState currentQuestState;
+    [Header("Quest Position Point")]
     [SerializeField] private bool startPoint = true;
     [SerializeField] private bool finishPoint = true;
+
+
+    [Header("Player Data")]
     [SerializeField] private PlayerData playerData;
 
+    // Quest Info UI
+    [Header("Quest Info UI")]
+    [SerializeField] private bool startQuestInfo = true;
+    [SerializeField] private bool finishQuestInfo = true;
+    [SerializeField] private GameObject questInfoUI;
+    private Animator questInfoAnimator;
+    private TextMeshProUGUI questStateUI;
+    private TextMeshProUGUI questDescriptionUI;
     // icon
+    [Header("Quest Icon")]
     [SerializeField] private GameObject interactUI;
     private QuestIcon questIcon;
 
     private void Awake() {
         questId = questInfoForPoint.id;
         questIcon = GetComponentInChildren<QuestIcon>();
+        questStateUI = questInfoUI.transform.Find("QuestState").GetComponent<TextMeshProUGUI>();
+        questDescriptionUI = questInfoUI.transform.Find("QuestDescription").GetComponent<TextMeshProUGUI>();
+        questInfoAnimator = questInfoUI.GetComponent<Animator>();
     }
 
     private void OnEnable() {
@@ -79,6 +96,7 @@ public class QuestPoint : MonoBehaviour
             GameEventsManager.instance.questEvents.StartQuest(questId);
             this.gameObject.layer = LayerMask.NameToLayer("Default");
             interactUI.SetActive(false);
+            QuestInfoUI(true);
         }
     }
     public void AdvanceQuestInteract(){
@@ -90,7 +108,22 @@ public class QuestPoint : MonoBehaviour
     public void FinishQuestInteract(){
         if(currentQuestState.Equals(QuestState.CAN_FINISH) && finishPoint){
             GameEventsManager.instance.questEvents.FinishQuest(questId);
+            QuestInfoUI(false);
         }
     }
-    
+
+    public void QuestInfoUI(bool started) {
+        if (started && startQuestInfo) {
+            questInfoAnimator.SetTrigger("show");
+            questStateUI.text = "Quest dimulai";
+            questDescriptionUI.text = questInfoForPoint.displayName;
+            startQuestInfo = false;
+        } else if (!started && finishQuestInfo) {
+            questInfoAnimator.SetTrigger("show");
+            questStateUI.text = "Quest selesai";
+            questDescriptionUI.text = questInfoForPoint.displayName;
+            finishQuestInfo = false;
+        }
+    }
+
 }

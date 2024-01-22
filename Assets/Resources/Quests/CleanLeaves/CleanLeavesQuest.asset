@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CleanLeavesQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: CleanLeavesQuest
-  displayName: Bersihkan 10 sampah!
+  displayName: Bersihkan 5 daun
   levelRequirements: 1
   questPrerequisites: []
   questStepPrefabs:
