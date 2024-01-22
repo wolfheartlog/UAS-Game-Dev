@@ -3818,6 +3818,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473384143}
   m_CullTransparentMesh: 1
+--- !u!1 &549216955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 549216956}
+  - component: {fileID: 549216958}
+  - component: {fileID: 549216957}
+  m_Layer: 0
+  m_Name: QuestDescription
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &549216956
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549216955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.9752, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1472408956}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 129, y: -215}
+  m_SizeDelta: {x: 1909.8, y: 205.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &549216957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549216955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Placeholder
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 67
+  m_fontSizeBase: 67
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &549216958
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549216955}
+  m_CullTransparentMesh: 1
 --- !u!1 &601444815
 GameObject:
   m_ObjectHideFlags: 0
@@ -5703,6 +5838,141 @@ RectTransform:
   m_AnchoredPosition: {x: 0.77, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1232477848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1232477849}
+  - component: {fileID: 1232477851}
+  - component: {fileID: 1232477850}
+  m_Layer: 0
+  m_Name: QuestState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1232477849
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232477848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.9752, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1472408956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -590, y: 232}
+  m_SizeDelta: {x: 600.8, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1232477850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232477848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Placeholder
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 94.88
+  m_fontSizeBase: 94.88
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -139.44669, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1232477851
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232477848}
+  m_CullTransparentMesh: 1
 --- !u!1 &1247875412
 GameObject:
   m_ObjectHideFlags: 0
@@ -7720,6 +7990,106 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
+--- !u!1 &1472408955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1472408956}
+  - component: {fileID: 1472408959}
+  - component: {fileID: 1472408958}
+  - component: {fileID: 1472408957}
+  m_Layer: 0
+  m_Name: QuestInfoUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1472408956
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472408955}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.28, y: 0.072799996, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1232477849}
+  - {fileID: 549216956}
+  m_Father: {fileID: 1855260434}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1232, y: 337.00006}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1472408957
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472408955}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 980440ae83e54a949a4ae5579dbdbe65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1472408958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472408955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.68235296}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1472408959
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472408955}
+  m_CullTransparentMesh: 1
 --- !u!1 &1505551916
 GameObject:
   m_ObjectHideFlags: 0
@@ -8092,6 +8462,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607406274}
   m_CullTransparentMesh: 1
+--- !u!1001 &1612189697
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1668112046}
+    m_Modifications:
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433562, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5695687190379433563, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
+      propertyPath: m_Name
+      value: QuestIcon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e539e87a137a43444b588b07b8f6789b, type: 3}
 --- !u!1 &1638386752
 GameObject:
   m_ObjectHideFlags: 0
@@ -8582,13 +9009,329 @@ MonoBehaviour:
   defaultNPCSprite: {fileID: 21300000, guid: 9dd92b366fa3b54479c91fdb1360f970, type: 3}
   defaultPlayerSprite: {fileID: 21300000, guid: 432f0feaa8fc83b4d9af7320c8d43af5, type: 3}
   targetManager: {fileID: 0}
-  preload: 0
+  preload: 1
   notuptodate: 0
   startp: 0
   loadtag: 
   langs: []
-  S_playerDiags: []
-  S_actionNodes: []
+  S_playerDiags:
+  - commentCount: 1
+    s_comment:
+    - text: Bagaimana kegiatanmu hari ini, Yuliana?
+      extraData: ExtraData
+      inputSetIndex: 0
+      outputNodeIndex: -1
+      outActionIndex: 3
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 5
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Baik sekali kamu Yuliana, bisa membantu Nek Ayu menyebrang jalan.
+      extraData: ExtraData
+      inputSetIndex: 1
+      outputNodeIndex: -1
+      outActionIndex: 1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 1
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Wah, kamu tadi membantu Mbak Diana ya? Pintar sekali!
+      extraData: ExtraData
+      inputSetIndex: 2
+      outputNodeIndex: -1
+      outActionIndex: 1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 2
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Kamu mengembalikan dompet Mas Jonas yang hilang? Tindakan yang bagus,
+        Yuliana!
+      extraData: ExtraData
+      inputSetIndex: 3
+      outputNodeIndex: -1
+      outActionIndex: 1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 3
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Oh, kamu memberikan permenmu ke Maya? Pintar anak Ibu!
+      extraData: ExtraData
+      inputSetIndex: 4
+      outputNodeIndex: -1
+      outActionIndex: 1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 4
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Kamu ahli sekali bisa membantu Mas Leon mencari buku yang diperlukannya.
+      extraData: ExtraData
+      inputSetIndex: 5
+      outputNodeIndex: -1
+      outActionIndex: 1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 6
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Kamu menyapa Bu Nina saat bertemu? Baguslah, Ibu senang kamu mengerti
+        adab yang baik.
+      extraData: ExtraData
+      inputSetIndex: 6
+      outputNodeIndex: -1
+      outActionIndex: 1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 7
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Yuli, Ibu kecewa ya kamu tidak bisa membantu banyak orang... lain kali,
+        kamu harus bisa menolong orang sekitar dan memiliki etika yang baik.
+      extraData: ExtraData
+      inputSetIndex: 7
+      outputNodeIndex: 9
+      outActionIndex: -1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 9
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Ibu senang mendengar kamu bisa membantu banyak orang!
+      extraData: ExtraData
+      inputSetIndex: 8
+      outputNodeIndex: 12
+      outActionIndex: -1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 10
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Baik, Bu...
+      extraData: ExtraData
+      inputSetIndex: 9
+      outputNodeIndex: 10
+      outActionIndex: -1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 11
+    pTag: Yuliana
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 1
+    s_comment:
+    - text: Ya sudah, yuk waktunya makan malam
+      extraData: ExtraData
+      inputSetIndex: 10
+      outputNodeIndex: 11
+      outActionIndex: -1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 12
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Asik! Yuliana tidak sabar, Bu!
+      extraData: ExtraData
+      inputSetIndex: 11
+      outputNodeIndex: -1
+      outActionIndex: 2
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 13
+    pTag: Yuliana
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 1
+    s_comment:
+    - text: Hehe, Yuli juga senang bisa membantu!
+      extraData: ExtraData
+      inputSetIndex: 12
+      outputNodeIndex: 13
+      outActionIndex: -1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 14
+    pTag: Yuliana
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  - commentCount: 1
+    s_comment:
+    - text: Pintar ya memang anak Ibu. Kalau begitu, nanti malam kita makan spesial
+        ya, sebagai hadiah untuk kamu.
+      extraData: ExtraData
+      inputSetIndex: 13
+      outputNodeIndex: 11
+      outActionIndex: -1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 15
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: Waktunya makan malam
+      extraData: ExtraData
+      inputSetIndex: 14
+      outputNodeIndex: 11
+      outActionIndex: -1
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 16
+    pTag: 
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 0
+  - commentCount: 1
+    s_comment:
+    - text: '[Ceritakan kegiatan]'
+      extraData: ExtraData
+      inputSetIndex: 15
+      outputNodeIndex: -1
+      outActionIndex: 0
+      sprites: {fileID: 0}
+      audios: {fileID: 0}
+      visible: 1
+    ID: 17
+    pTag: Yuliana
+    sprite: {fileID: 0}
+    vars: []
+    varKeys: []
+    isPlayer: 1
+  S_actionNodes:
+  - pauseHere: 0
+    gameObjectName: Ibu
+    methodName: StartDialogue
+    paramType: 0
+    gotoNode: -1
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    ID: 0
+    outPlayerIndex: -1
+    outActionIndex: -1
+    ovrStartNode: -1
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: '[No object]'
+    methodName: '[No method]'
+    paramType: -1
+    gotoNode: -1
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    ID: 8
+    outPlayerIndex: -1
+    outActionIndex: -1
+    ovrStartNode: -1
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: Ibu
+    methodName: Finish
+    paramType: 0
+    gotoNode: -1
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    ID: 18
+    outPlayerIndex: -1
+    outActionIndex: -1
+    ovrStartNode: -1
+    renameDialogue: 
+  - pauseHere: 0
+    gameObjectName: Ibu
+    methodName: FinishQuestInteract
+    paramType: 0
+    gotoNode: -1
+    param_bool: 0
+    param_string: 
+    param_int: 0
+    param_float: 0
+    ID: 19
+    outPlayerIndex: 15
+    outActionIndex: -1
+    ovrStartNode: -1
+    renameDialogue: 
 --- !u!114 &1668112053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8614,6 +9357,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15a489e1cd3fc047a090bf2ab583b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1668112055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450391432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a10881a2e2b1c4db9333b1262ecd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questInfoForPoint: {fileID: 11400000, guid: e3b473c9c345764438ab9ca384044e5c, type: 2}
+  startPoint: 0
+  finishPoint: 1
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
+  startQuestInfo: 0
+  finishQuestInfo: 1
+  questInfoUI: {fileID: 1472408955}
+  interactUI: {fileID: 1959181245}
 --- !u!1 &1696150800
 GameObject:
   m_ObjectHideFlags: 0
@@ -8990,6 +9753,7 @@ RectTransform:
   - {fileID: 1160193064}
   - {fileID: 1959181246}
   - {fileID: 1291832146}
+  - {fileID: 1472408956}
   m_Father: {fileID: 157359675}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

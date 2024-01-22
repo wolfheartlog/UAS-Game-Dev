@@ -24159,7 +24159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1c9bca81ecd834d8d31c049438edbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadQuestState: 0
+  loadQuestState: 1
 --- !u!1 &625877334
 GameObject:
   m_ObjectHideFlags: 0
@@ -27511,7 +27511,7 @@ GameObject:
   - component: {fileID: 1364875646}
   - component: {fileID: 1364875647}
   - component: {fileID: 1364875648}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Home-in
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27581,7 +27581,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364875643}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b8b99d8a12e39e4b94d2d7162c7c978, type: 3}
   m_Name: 
@@ -27597,6 +27597,7 @@ MonoBehaviour:
   - DianaDialogue
   - Example3Dialogue
   - Example4_dialogue
+  - FinishDialogue
   - FinishDoor
   - IbuDialogue
   - Item_LookUp
@@ -27611,7 +27612,7 @@ MonoBehaviour:
   - RenataDialogue
   - TriggeredDude
   - Witch
-  assignedIndex: 10
+  assignedIndex: 11
   assignedID: 55993
   assignedDialogue: FinishDoor
   interactionCount: 0

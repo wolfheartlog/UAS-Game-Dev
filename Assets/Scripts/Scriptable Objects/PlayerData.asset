@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0502557758f6d4146bf32ef153a71114, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  spawnLocation: {x: -0.94, y: -3.32}
-  currentGoodness: 7
+  spawnLocation: {x: 4, y: -3.3}
+  currentGoodness: 5
   nekAyu: 0
   diana: 0
-  jonas: 0
+  jonas: 1
   maya: 0
-  leon: 0
-  buNina: 0
+  leon: 1
+  buNina: 1
   currentLevel: 1

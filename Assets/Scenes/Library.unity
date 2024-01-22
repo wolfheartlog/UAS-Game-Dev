@@ -11837,8 +11837,8 @@ GameObject:
   - component: {fileID: 564442483}
   - component: {fileID: 1855784818}
   - component: {fileID: 1855784817}
-  - component: {fileID: 1855784819}
   - component: {fileID: 1855784820}
+  - component: {fileID: 1855784821}
   m_Layer: 6
   m_Name: Renata
   m_TagString: Untagged
@@ -11924,26 +11924,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1855784819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855784816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2a10881a2e2b1c4db9333b1262ecd56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questInfoForPoint: {fileID: 11400000, guid: d2669c6223c57854aacbf0cf44a5cd80, type: 2}
-  startPoint: 1
-  finishPoint: 1
-  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
-  startQuestInfo: 1
-  finishQuestInfo: 1
-  questInfoUI: {fileID: 2037760918}
-  interactUI: {fileID: 407680536}
 --- !u!114 &1855784820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11998,6 +11978,26 @@ MonoBehaviour:
   langs: []
   S_playerDiags: []
   S_actionNodes: []
+--- !u!114 &1855784821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855784816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a10881a2e2b1c4db9333b1262ecd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questInfoForPoint: {fileID: 11400000, guid: e3b473c9c345764438ab9ca384044e5c, type: 2}
+  startPoint: 1
+  finishPoint: 0
+  playerData: {fileID: 11400000, guid: ef0b52d68c915ca4cb23ac398ef9af44, type: 2}
+  startQuestInfo: 1
+  finishQuestInfo: 0
+  questInfoUI: {fileID: 2037760918}
+  interactUI: {fileID: 407680536}
 --- !u!1 &1855895046
 GameObject:
   m_ObjectHideFlags: 0

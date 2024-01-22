@@ -133,13 +133,12 @@ public class QuestManager : MonoBehaviour
         return idToQuestMap;
     }
 
-    private Quest GetQuestById(string id){
+    public Quest GetQuestById(string id){
         Quest quest = questMap[id];
         if(quest == null){
             Debug.LogError("ID "+id+" tidak ditemukan pada quest map");
         }
         return quest;
-
     }
 
     private void OnApplicationQuit(){
